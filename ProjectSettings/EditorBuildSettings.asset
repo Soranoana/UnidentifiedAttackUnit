@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/scene/Title.unity
+    guid: 0b95f9c52586b714d917d71770f8c621
+  - enabled: 1
+    path: Assets/scene/game.unity
+    guid: 0d056688b3dad6640870e717d4f3d683
+  - enabled: 1
+    path: Assets/scene/hard.unity
+    guid: 53b294a58183c2b4ea7166d8822f3563
+  - enabled: 1
+    path: Assets/scene/debug.unity
+    guid: 1d9121ffc1865954d826ff788951d156
+  - enabled: 1
+    path: Assets/scene/StaffRoleCreditOnly.unity
+    guid: 9cfbb4413d72b0244831b471ba07d1ad
+  - enabled: 1
+    path: Assets/scene/StaffRole.unity
+    guid: 4967cecdc850b694d84da004cecd8632
+  - enabled: 1
+    path: Assets/scene/GameOver.unity
+    guid: df7d4b84afe9aaa42a687e96d77fe0ca
+  - enabled: 1
+    path: Assets/scene/GamerClear.unity
+    guid: 63cb30ceed45c17449ad410135b54258

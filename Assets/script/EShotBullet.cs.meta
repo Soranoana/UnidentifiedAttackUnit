@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 24e972bfe09c62f4ebb3312780d06535
+timeCreated: 1478346716
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - EBullet: {fileID: 174836, guid: 486da14d9e7d09240ad839c4a9759974, type: 2}
+  - Emuzzle: {fileID: 455842, guid: 9abaf8039af270a4b9ad7f7178f1d245, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

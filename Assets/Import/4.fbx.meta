@@ -1,0 +1,125 @@
+fileFormatVersion: 2
+guid: 204954ddff5b2e143aba5357c8d09ae9
+timeCreated: 1480378011
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Camera
+    100004: inbe-da1-1_mqo
+    100006: inbe-da1-2_mqo
+    100008: inbe-da2-1_mqo
+    100010: inbe-da2-1_mqo.001
+    100012: inbe-da2-2_mqo
+    100014: inbe-da2-2_mqo.001
+    100016: inbe-da3-1_mqo
+    100018: inbe-da3-1_mqo.001
+    100020: inbe-da3-2_mqo
+    100022: inbe-da4_mqo
+    100024: Lamp
+    100026: obj1.010
+    100028: "\u30A4\u30AB_mqo"
+    100030: 1-1_mqo
+    100032: 1-2_mqo
+    100034: 2-1_mqo
+    100036: 2-2_mqo
+    100038: 2-2_mqo.001
+    100040: 3-1_mqo
+    100042: 3-2_mqo
+    100044: 4_mqo
+    100046: obj6
+    400000: //RootNode
+    400002: Camera
+    400004: inbe-da1-1_mqo
+    400006: inbe-da1-2_mqo
+    400008: inbe-da2-1_mqo
+    400010: inbe-da2-1_mqo.001
+    400012: inbe-da2-2_mqo
+    400014: inbe-da2-2_mqo.001
+    400016: inbe-da3-1_mqo
+    400018: inbe-da3-1_mqo.001
+    400020: inbe-da3-2_mqo
+    400022: inbe-da4_mqo
+    400024: Lamp
+    400026: obj1.010
+    400028: "\u30A4\u30AB_mqo"
+    400030: 1-1_mqo
+    400032: 1-2_mqo
+    400034: 2-1_mqo
+    400036: 2-2_mqo
+    400038: 2-2_mqo.001
+    400040: 3-1_mqo
+    400042: 3-2_mqo
+    400044: 4_mqo
+    400046: obj6
+    2300000: obj1.010
+    2300002: obj6
+    3300000: obj1.010
+    3300002: obj6
+    4300000: obj1.010
+    4300002: obj6
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
