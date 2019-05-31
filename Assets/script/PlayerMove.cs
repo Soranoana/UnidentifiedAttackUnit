@@ -9,7 +9,6 @@ public class PlayerMove : MonoBehaviour {
 	Rigidbody rigid;
 	private float speed;
 	private Vector3 direction;
-	private Vector3 was;
 	private Vector3 Tpoint;
 
     //OVR対応
@@ -29,7 +28,6 @@ public class PlayerMove : MonoBehaviour {
 		}else if (SceneManager.GetActiveScene ().name=="debug") {
 			speed =45f;
 		}
-		was = Vector3.zero;
 		Cursor.visible = false;
 		Cursor.lockState =CursorLockMode.Locked;
         
@@ -51,9 +49,8 @@ public class PlayerMove : MonoBehaviour {
             if (Input.GetKey(KeyCode.A)) {
                 keyGo(transform.right * -1);
             }
-        }
+        }else {
         //OVRInput and move
-        else {
             getMoveDirection();
             getCameraDirection();
             keyGo(moveVector3 * moveVectorValue);
@@ -61,7 +58,6 @@ public class PlayerMove : MonoBehaviour {
             moveVector3 = Vector3.zero;
             moveVectorValue = 0.0f;
         }
-		was = transform.position;
 		
         //カメラコントロール
 		if (gameObject.transform.localEulerAngles.x >= 280 || gameObject.transform.localEulerAngles.x <= 80) {

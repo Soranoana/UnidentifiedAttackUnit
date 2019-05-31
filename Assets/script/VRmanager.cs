@@ -5,25 +5,21 @@ using UnityEngine.SceneManagement;
 using UnityEngine.XR;
 
 public class VRmanager : MonoBehaviour {
-    /*
+
+    public GameObject[] onVrDestroy;
+    public GameObject[] onNonVrDestroy;
+
 	void Start () {
-        if (SceneManager.GetActiveScene().name=="debug"             ||
-            SceneManager.GetActiveScene().name=="game"              ||
-            SceneManager.GetActiveScene().name=="hard"              ||
-            SceneManager.GetActiveScene().name=="StaffRole"         ||
-            SceneManager.GetActiveScene().name=="StaffRoleCreditOnly") {
-            XRSettings.enabled=true;
-        } else {
-            XRSettings.enabled=false;
-        }
-        if (XRSettings.enabled) {
-            InputTracking.Recenter();
-            InputTracking.disablePositionalTracking=true;
-            XRDevice.SetTrackingSpaceType(TrackingSpaceType.Stationary);
+        if (XRSettings.enabled) { 
+            for (int i = 0; i < onVrDestroy.Length; i++) {
+                Destroy(onVrDestroy[i]);
+                //onVrDestroy[i].gameObject.SetActive(false);
+            }
+        }else { 
+            for (int i = 0; i < onNonVrDestroy.Length; i++) {
+                Destroy(onNonVrDestroy[i]);
+                //onNonVrDestroy[i].gameObject.SetActive(false);
+            }
         }
     }
-
-    void Update () {
-        this.gameObject.transform.localPosition=Vector3.zero;
-    }*/
 }

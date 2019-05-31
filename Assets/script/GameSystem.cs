@@ -16,32 +16,7 @@ public class GameSystem : MonoBehaviour {
 	public GameObject boss;
 
 	void Start () {
-        //プロットフォーム依存コンパイル用
-        GameObject OVRCamera = GameObject.Find("Player").transform.Find("OVRCameraRig").gameObject;
-        GameObject FPSCamera = GameObject.Find("Player").transform.Find("FPS Camera").gameObject;
-        /* プラットホーム依存コンパイル */
-#if UNITY_EDITOR
-        //OVRカメラを消す
-        Destroy(OVRCamera);
-#endif
-#if UNITY_STANDALONE_WIN
-        //OVRカメラを消す
-        Destroy(OVRCamera);
-#endif
-#if UNITY_ANDROID
-        if (XRSettings.enabled) {
-            if (XRDevice.model == "oculus") {
-                Destroy(FPSCamera);
-            }
-            else {
-                //非実装
-            }
-        }
-        else {
-            Destroy(OVRCamera);
-        }
-#endif
-        /* プラットホーム依存コンパイル ここまで*/
+
         bossCome = false;
 		goal++;
 		transform.Find ("Audio Source Enemy").gameObject.SetActive (true);

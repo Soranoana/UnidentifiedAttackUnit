@@ -171,8 +171,8 @@ class OVREngineConfigurationUpdater
 		{
 			if (mgrs [i].isActiveAndEnabled)
 			{
-				Debug.Log ("Enabling Unity VR support");
-				PlayerSettings.virtualRealitySupported = true;
+				//Debug.Log ("Enabling Unity VR support");
+				//PlayerSettings.virtualRealitySupported = true;
 
 				bool oculusFound = false;
 #if UNITY_2017_2_OR_NEWER
@@ -183,7 +183,7 @@ class OVREngineConfigurationUpdater
 					oculusFound |= (device == "Oculus");
 
 				if (!oculusFound)
-					Debug.LogError("Please add Oculus to the list of supported devices to use the Utilities.");
+					//Debug.LogError("Please add Oculus to the list of supported devices to use the Utilities.");
 
 				return;
 			}

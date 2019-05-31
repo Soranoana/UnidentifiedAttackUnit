@@ -14,7 +14,6 @@ public class ShotBullet : MonoBehaviour {
 	private int flameCount;
 	void Start () {
 		if (SceneManager.GetActiveScene ().name=="game") {
-			Debug.Log ("game");
 			speed = 50;
 			delta = 15;
 		}else if (SceneManager.GetActiveScene ().name=="hard") {
