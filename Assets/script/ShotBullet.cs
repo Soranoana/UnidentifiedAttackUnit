@@ -32,25 +32,12 @@ public class ShotBullet : MonoBehaviour {
 	void Update () {
 		flameCount++;
 		if (flameCount >= delta) {
-			// z キーが押された時
-			if (Input.GetKeyDown (KeyCode.Space)) {
+			if (Input.GetKeyDown (KeyCode.Space) ||
+                Input.GetButtonDown("Fire1") ||
+                OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger) ||
+                OVRInput.GetDown(OVRInput.RawButton.LIndexTrigger)) {
+
 				GetComponent<AudioSource> ().PlayOneShot (se);
-				// 弾丸の複製
-				GameObject Bullets = GameObject.Instantiate (Bullet)as GameObject;
-				Bullets.GetComponent<Renderer> ().material.color = Color.red;
-				// 弾丸の位置を調整
-				Bullets.transform.position = muzzle.position;
-				//前方に向ける
-				Bullets.transform.LookAt (muzzle.position + transform.forward);
-				Bullets.name = "Bullet" + flameCount;
-				Vector3 force;
-				force = this.gameObject.transform.forward * speed;
-				// Rigidbodyに力を加えて発射
-				Bullets.GetComponent<Rigidbody> ().AddForce (force, ForceMode.VelocityChange);
-				flameCount = 0;
-			}
-			// マウス左クリックされた時
-			if (Input.GetButtonDown ("Fire1")) {
 				// 弾丸の複製
 				GameObject Bullets = GameObject.Instantiate (Bullet)as GameObject;
 				Bullets.GetComponent<Renderer> ().material.color = Color.red;

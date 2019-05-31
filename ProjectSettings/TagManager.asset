@@ -23,6 +23,7 @@ TagManager:
   - 4-2
   - StaffRole
   - staffRoleSafe
+  - UIrazer
   layers:
   - Default
   - TransparentFX

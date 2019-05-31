@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.XR;
 
 public class VRmanager : MonoBehaviour {
-
+    /*
 	void Start () {
         if (SceneManager.GetActiveScene().name=="debug"             ||
             SceneManager.GetActiveScene().name=="game"              ||
@@ -25,5 +25,5 @@ public class VRmanager : MonoBehaviour {
 
     void Update () {
         this.gameObject.transform.localPosition=Vector3.zero;
-    }
+    }*/
 }

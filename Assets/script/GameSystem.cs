@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.SceneManagement; 
+using UnityEngine.SceneManagement;
+using UnityEngine.XR;
 //ゲームシステム一括管理、シーン遷移
 public class GameSystem : MonoBehaviour {
 	private int EnemyCount;
@@ -13,8 +14,35 @@ public class GameSystem : MonoBehaviour {
 	private static int goal=0;
 	private Vector3 p;
 	public GameObject boss;
+
 	void Start () {
-		bossCome=false;
+        //プロットフォーム依存コンパイル用
+        GameObject OVRCamera = GameObject.Find("Player").transform.Find("OVRCameraRig").gameObject;
+        GameObject FPSCamera = GameObject.Find("Player").transform.Find("FPS Camera").gameObject;
+        /* プラットホーム依存コンパイル */
+#if UNITY_EDITOR
+        //OVRカメラを消す
+        Destroy(OVRCamera);
+#endif
+#if UNITY_STANDALONE_WIN
+        //OVRカメラを消す
+        Destroy(OVRCamera);
+#endif
+#if UNITY_ANDROID
+        if (XRSettings.enabled) {
+            if (XRDevice.model == "oculus") {
+                Destroy(FPSCamera);
+            }
+            else {
+                //非実装
+            }
+        }
+        else {
+            Destroy(OVRCamera);
+        }
+#endif
+        /* プラットホーム依存コンパイル ここまで*/
+        bossCome = false;
 		goal++;
 		transform.Find ("Audio Source Enemy").gameObject.SetActive (true);
 		transform.Find ("Audio Source Boss").gameObject.SetActive (false);
