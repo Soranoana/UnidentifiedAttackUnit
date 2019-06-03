@@ -582,7 +582,7 @@ GameObject:
   - component: {fileID: 23381039521624636}
   - component: {fileID: 65966830937299198}
   m_Layer: 0
-  m_Name: UIrazerL
+  m_Name: UIrazer
   m_TagString: UIrazer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -872,7 +872,7 @@ GameObject:
   - component: {fileID: 23823394800138574}
   - component: {fileID: 65535622440769552}
   m_Layer: 0
-  m_Name: UIrazerR
+  m_Name: UIrazer
   m_TagString: UIrazer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -38,7 +38,6 @@ public class PlayerHit : MonoBehaviour {
 		}
 	}
 	void OnCollisionEnter(Collision col){
-            Debug.Log("run");
 		if (col.gameObject.tag == "Enemy") {
 			GetComponent<AudioSource> ().PlayOneShot (se);
 			HP--;
