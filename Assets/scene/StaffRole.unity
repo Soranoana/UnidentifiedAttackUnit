@@ -585,11 +585,7 @@ Prefab:
       propertyPath: m_Name
       value: PlayerED
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114244744642110686, guid: 1ca7d1f0907674e4595997d3d5f48ab8, type: 2}
-    - {fileID: 65912982813331556, guid: 1ca7d1f0907674e4595997d3d5f48ab8, type: 2}
-    - {fileID: 64096459225903462, guid: 1ca7d1f0907674e4595997d3d5f48ab8, type: 2}
-    - {fileID: 92475146036494134, guid: 1ca7d1f0907674e4595997d3d5f48ab8, type: 2}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ca7d1f0907674e4595997d3d5f48ab8, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &215208078
