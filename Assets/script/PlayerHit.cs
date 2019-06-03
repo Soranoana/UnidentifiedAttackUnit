@@ -13,10 +13,7 @@ public class PlayerHit : MonoBehaviour {
 			HP = 7;
 		}else if (SceneManager.GetActiveScene ().name=="debug") {
 			HP = 1000000;
-		}else {
-            Debug.Log("HP nominal infinity");
-            HP = 1000000;
-        }
+		}
 		Ccount = 0;
 		transform.Find ("PL").gameObject.GetComponent<Renderer> ().material.color = Color.yellow;
 	}

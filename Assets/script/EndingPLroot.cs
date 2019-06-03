@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using UnityStandardAssets.CrossPlatformInput;
+using UnityStandardAssets.CrossPlatformInput;
 using UnityEngine.SceneManagement; 
 public class EndingPLroot : MonoBehaviour {
 	private float baseSpeed;
@@ -88,17 +88,17 @@ public class EndingPLroot : MonoBehaviour {
 		//カメラコントロール
 		if (gameObject.transform.localEulerAngles.x >= 280 || gameObject.transform.localEulerAngles.x <= 80) {			
 			//object上方向80度以下(240度以上)の向きまたは下方向80度の向き
-			gameObject.transform.Rotate (-1f * Input.GetAxis ("Mouse Y") * 3f, 0, 0);		//マウス入力y座標でローカルx座標回転
+			gameObject.transform.Rotate (-1f * CrossPlatformInputManager.GetAxis ("Mouse Y") * 3f, 0, 0);		//マウス入力y座標でローカルx座標回転
 		}else if(gameObject.transform.localEulerAngles.x < 180){
-			if (Input.GetAxis ("Mouse Y") > 0) {		//マウス入力上
-				gameObject.transform.Rotate (-1f * Input.GetAxis ("Mouse Y") * 3f, 0, 0);		//マウス入力y座標でローカルx座標回転
+			if (CrossPlatformInputManager.GetAxis ("Mouse Y") > 0) {		//マウス入力上
+				gameObject.transform.Rotate (-1f * CrossPlatformInputManager.GetAxis ("Mouse Y") * 3f, 0, 0);		//マウス入力y座標でローカルx座標回転
 			}
 		} else if (gameObject.transform.localEulerAngles.x > 180){
-			if(Input.GetAxis ("Mouse Y") < 0) {		//マウス入力下
-				gameObject.transform.Rotate (-1f * Input.GetAxis ("Mouse Y") * 3f, 0, 0);		//マウス入力y座標でローカルx座標回転
+			if(CrossPlatformInputManager.GetAxis ("Mouse Y") < 0) {		//マウス入力下
+				gameObject.transform.Rotate (-1f * CrossPlatformInputManager.GetAxis ("Mouse Y") * 3f, 0, 0);		//マウス入力y座標でローカルx座標回転
 			}
 		}
-		gameObject.transform.Rotate ( 0,Input.GetAxis("Mouse X")*3f,0,Space.World);	//マウス入力x座標でワールドy座標回転
+		gameObject.transform.Rotate ( 0,CrossPlatformInputManager.GetAxis("Mouse X")*3f,0,Space.World);	//マウス入力x座標でワールドy座標回転
 		if (role) {
 			Vector3 relativePos = target - transform.position;
 			Quaternion rotation = Quaternion.LookRotation (relativePos);

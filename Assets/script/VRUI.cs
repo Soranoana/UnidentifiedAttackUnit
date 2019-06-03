@@ -34,11 +34,11 @@ public class VRUI : MonoBehaviour {
     public void OnTriggerStay(Collider other) {
         //if (other.tag == "UIrazer") {
             //押されたら色を変更、実行する
-            /**if ((OVRInput.GetDown(OVRInput.RawButton.LHandTrigger) && other.name == "UIrazerL") ||
+            if ((OVRInput.GetDown(OVRInput.RawButton.LHandTrigger) && other.name == "UIrazerL") ||
                 (OVRInput.GetDown(OVRInput.RawButton.RHandTrigger) && other.name == "UIrazerR")) {
                 myMaterial.color = defineColor;
                 doOwnEffect();
-            }*/
+            }
         //}
     }
 

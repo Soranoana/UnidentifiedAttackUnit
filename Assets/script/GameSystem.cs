@@ -47,14 +47,12 @@ public class GameSystem : MonoBehaviour {
 		//2 ゲームリロード
 		if (key == 0) {
 			SceneManager.LoadScene ("StaffRole");
-            Debug.Log("SR");
 		}
 		if (key == 1) {
 			//カーソル表示
 			Cursor.visible = true;
 			Cursor.lockState =CursorLockMode.None;
 			SceneManager.LoadScene ("GameOver");
-            Debug.Log("GO");
 		}
 		if (key == 2) {
 			SceneManager.LoadScene ("game");

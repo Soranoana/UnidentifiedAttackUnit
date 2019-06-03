@@ -32,9 +32,9 @@ public class ShotBullet : MonoBehaviour {
 		flameCount++;
 		if (flameCount >= delta) {
 			if (Input.GetKeyDown (KeyCode.Space) ||
-                Input.GetButtonDown("Fire1")/** ||
+                Input.GetButtonDown("Fire1") ||
                 OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger) ||
-                OVRInput.GetDown(OVRInput.RawButton.LIndexTrigger)*/) {
+                OVRInput.GetDown(OVRInput.RawButton.LIndexTrigger)) {
 
 				GetComponent<AudioSource> ().PlayOneShot (se);
 				// 弾丸の複製
