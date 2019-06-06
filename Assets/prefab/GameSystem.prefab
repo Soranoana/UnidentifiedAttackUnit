@@ -52,7 +52,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4575357277140140}
   - component: {fileID: 114452596904637992}
-  - component: {fileID: 114009860214118070}
   - component: {fileID: 114561970974203164}
   m_Layer: 0
   m_Name: GameSystem
@@ -292,20 +291,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &114009860214118070
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1920266587648578}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a8c9f5f2a370ce4082888c3a278a510, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
-  scoreText: {fileID: 0}
-  text: 
 --- !u!114 &114452596904637992
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -330,5 +315,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boss: {fileID: 1170777489983750, guid: e5f09bd99a71f244fb037926470f0768, type: 2}
-  OVRCamera: {fileID: 0}
-  FPSCamera: {fileID: 0}
