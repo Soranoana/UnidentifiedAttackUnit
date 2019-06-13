@@ -10,6 +10,7 @@ public class fadeParticle : MonoBehaviour {
     private int paintArea;//描画を始める範囲
     // private ParticleSystem myParticle;
     private Material myMaterial;
+    private float myAlpha;
     private Vector3 target; //playerとtransform距離ベクトル
 
     void Start() {
