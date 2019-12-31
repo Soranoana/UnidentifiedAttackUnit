@@ -8,7 +8,7 @@ public class fadeParticle : MonoBehaviour {
     private GameObject player;
     private int fade;
     private int paintArea;//描画を始める範囲
-    // private ParticleSystem myParticle;
+    private ParticleSystem myParticle;
     private Material myMaterial;
     private float myAlpha;
     private Vector3 target; //playerとtransform距離ベクトル
@@ -54,7 +54,7 @@ public class fadeParticle : MonoBehaviour {
             }
         }
         //        gameObject.GetComponent<MeshRenderer>().material.color = new Color(1, 1, 1, 1.0f * fade / 100);
-        GetComponent<ParticleSystem>().startLifetime = (float)( 100 * fade / 100 );
+        //GetComponent<ParticleSystem>().startLifetime = (float)( 100 * fade / 100 );
 
     }
     /*

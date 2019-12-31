@@ -3,11 +3,11 @@ using System.Collections;
 using UnityEngine.SceneManagement; 
 //エネミー召喚システム
 public class makeE : MonoBehaviour {
-	private int makes;
+	public int makes;
 	private Vector3 p;
 	public GameObject Enemy; 
 	private GameObject pl;
-	void Start () {
+	void Awake () {
 		if (SceneManager.GetActiveScene ().name=="game") {
 			makes = 10;
 		}else if (SceneManager.GetActiveScene ().name=="hard") {
@@ -15,9 +15,12 @@ public class makeE : MonoBehaviour {
 		}else if (SceneManager.GetActiveScene ().name=="debug") {
 			makes=5;
 		}
-		pl = GameObject.FindGameObjectWithTag ("Player");
 	}
-	void Update () {
+
+    private void Start() {
+        pl = GameObject.FindGameObjectWithTag("Player");
+    }
+    void Update () {
 		while (makes>0) {
 			GameObject Enemys = GameObject.Instantiate (Enemy)as GameObject;
 			// 弾丸の位置を調整
